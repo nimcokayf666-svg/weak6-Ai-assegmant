@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhagax Warqad Mudac</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <h1>✊ ✋ ✌️ Dhagax Warqad Mudac</h1>
+    <p class="subtitle">Kan marka hore gaadha 5 dhibcood ayaa guuleysta!</p>
+
+    <section class="scoreboard" aria-live="polite">
+      <div class="score-box">
+        <span class="label">Adiga</span>
+        <span id="playerScore" class="score">0</span>
+      </div>
+      <div class="score-box">
+        <span class="label">Kombiyuutarka</span>
+        <span id="computerScore" class="score">0</span>
+      </div>
+    </section>
+
+    <section class="arena">
+      <div class="pick">
+        <span class="label">Doorashadaada</span>
+        <span id="playerPick" class="emoji">❔</span>
+      </div>
+      <span class="vs">VS</span>
+      <div class="pick">
+        <span class="label">Kombiyuutarka</span>
+        <span id="computerPick" class="emoji">❔</span>
+      </div>
+    </section>
+
+    <p id="message" class="message">Riix "Bilow" si aad u bilowdo ciyaarta.</p>
+
+    <section class="choices">
+      <button class="choice" data-choice="dhagax" disabled>✊<small>Dhagax</small></button>
+      <button class="choice" data-choice="warqad" disabled>✋<small>Warqad</small></button>
+      <button class="choice" data-choice="mudac" disabled>✌️<small>Mudac</small></button>
+    </section>
+
+    <section class="controls">
+      <button id="startBtn" class="btn start">▶ Bilow</button>
+      <button id="restartBtn" class="btn restart">🔄 Dib u bilow</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
